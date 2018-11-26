@@ -14,8 +14,17 @@ To submit your answer, please clone this repository and make your edits. Once yo
 1. A user has several versions of R installed in their path. Each version of R has a number of locally installed libraries. The user is confused, and would like to know which library is installed for which version of R. Can you write a command to help them out?
 2. A common problem with shared filesystems is a disk quota overflow. This can be due to 1) a large combined size on disk or 2) too many files present on disk. We would like to help users who encounter this problem to locate the problematic files/directories. Write a command to sort all subdirectories of level n (n determined by the user) by their human-readable size. Write another command to sort all subdirectories of level n according to the number of files they contain.
 3. A user wants to install an `R` package and gets the following [error log](data/error.log). What is likely to cause the error and how can they solve it?
+4. A user is running commands like this one `cat file1 <(cut -d " " -f 1-15,17,18 file2) > file3`. What does this command do? It runs fine on the command line, but then the user puts all their commands into a script, and runs `chmod +x` on it. However, that line of code throws the following error : `syntax error near unexpected token '('`. Why?
+5. A collaborator has sent you [this script](data/EasyQCWrapper.sh). It is a wrapper for a bioinformatics software called `EasyQC`.  Running it, you get the following error: 
+
+    ```bash
+    ./test.EasyQC-START.R: line 6: syntax error near unexpected token 'EasyQC'
+    ./test.EasyQC-START.R: line 6: 'library(EasyQC)'
+    ```
+    
+     You need to run this script now, but it's Friday, your collaborator is in Japan and they have already left the office.
 3. The bjobs command gives this kind of output: . on screen, list of all jobs running/pending in every queue. Use LSF commands if you know them, the shell otherwise.
-4. an analysis you require needs a python library but you are not an admin, what do you do? If you needed to ask IT to install one piece of software that allows you to install whatever you want w
+4. An analysis you need to run on the cluster requires a particular python library, but you do not have administrator rights. IT is on holiday. What do you do? Similar solutions exist for other languages, however things become more tricky 
 
 ### Bioinformatics
 1. Converting VCF to BIMBAM
