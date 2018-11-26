@@ -1,0 +1,198 @@
+source("https://bioconductor.org/biocLite.R")
+ 
+Bioconductor version 3.5 (BiocInstaller 1.26.1), ?biocLite for help
+> biocLite("MSstats")
+BioC_mirror: https://bioconductor.org
+Using Bioconductor 3.5 (BiocInstaller 1.26.1), R 3.4.0 (2017-04-21).
+Installing package(s) ‘MSstats’
+also installing the dependencies ‘minqa’, ‘nloptr’, ‘caTools’, ‘mzR’, ‘pcaMethods’, ‘lme4’, ‘gplots’, ‘ggrepel’, ‘MSnbase’
+ 
+trying URL 'https://cran.rstudio.com/src/contrib/minqa_1.2.4.tar.gz'
+Content type 'application/x-gzip' length 53548 bytes (52 KB)
+==================================================
+downloaded 52 KB
+ 
+trying URL 'https://cran.rstudio.com/src/contrib/nloptr_1.0.4.tar.gz'
+Content type 'application/x-gzip' length 353957 bytes (345 KB)
+==================================================
+downloaded 345 KB
+ 
+trying URL 'https://cran.rstudio.com/src/contrib/caTools_1.17.1.tar.gz'
+Content type 'application/x-gzip' length 63358 bytes (61 KB)
+==================================================
+downloaded 61 KB
+ 
+trying URL 'https://bioconductor.org/packages/3.5/bioc/src/contrib/mzR_2.10.0.tar.gz'
+Content type 'application/x-gzip' length 5244073 bytes (5.0 MB)
+==================================================
+downloaded 5.0 MB
+ 
+trying URL 'https://bioconductor.org/packages/3.5/bioc/src/contrib/pcaMethods_1.68.0.tar.gz'
+Content type 'application/x-gzip' length 698177 bytes (681 KB)
+==================================================
+downloaded 681 KB
+ 
+trying URL 'https://cran.rstudio.com/src/contrib/lme4_1.1-14.tar.gz'
+Content type 'application/x-gzip' length 3601039 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+ 
+trying URL 'https://cran.rstudio.com/src/contrib/gplots_3.0.1.tar.gz'
+Content type 'application/x-gzip' length 578626 bytes (565 KB)
+==================================================
+downloaded 565 KB
+ 
+trying URL 'https://cran.rstudio.com/src/contrib/ggrepel_0.7.0.tar.gz'
+Content type 'application/x-gzip' length 613978 bytes (599 KB)
+==================================================
+downloaded 599 KB
+ 
+trying URL 'https://bioconductor.org/packages/3.5/bioc/src/contrib/MSnbase_2.2.0.tar.gz'
+Content type 'application/x-gzip' length 3748796 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+ 
+trying URL 'https://bioconductor.org/packages/3.5/bioc/src/contrib/MSstats_3.8.6.tar.gz'
+Content type 'application/x-gzip' length 352315 bytes (344 KB)
+==================================================
+downloaded 344 KB
+ 
+* installing *source* package ‘minqa’ ...
+** package ‘minqa’ successfully unpacked and MD5 sums checked
+** libs
+gfortran   -fpic  -g -O2  -c altmov.f -o altmov.o
+gfortran   -fpic  -g -O2  -c bigden.f -o bigden.o
+gfortran   -fpic  -g -O2  -c biglag.f -o biglag.o
+gfortran   -fpic  -g -O2  -c bobyqa.f -o bobyqa.o
+gfortran   -fpic  -g -O2  -c bobyqb.f -o bobyqb.o
+gfortran   -fpic  -g -O2  -c lagmax.f -o lagmax.o
+g++  -I/lustre/scratch115/teams/zeggini/R-3.4.0/include -DNDEBUG  -I"/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/Rcpp/include" -I/usr/local/include   -fpic  -O3 -mtune=native -march=native -Wno-unused-variable -Wno-unused-function -fpermissive -std=c++11 -c minqa.cpp -o minqa.o
+cc1plus: error: unrecognised command line option ‘-std=c++11’
+make: *** [minqa.o] Error 1
+ERROR: compilation failed for package ‘minqa’
+* removing ‘/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/minqa’
+* installing *source* package ‘nloptr’ ...
+** package ‘nloptr’ successfully unpacked and MD5 sums checked
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking for pkg-config... yes
+configure: Now testing for NLopt header file.
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking nlopt.h usability... yes
+checking nlopt.h presence... yes
+checking for nlopt.h... yes
+configure: Suitable NLopt library found.
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+g++  -I/lustre/scratch115/teams/zeggini/R-3.4.0/include -DNDEBUG   -I/usr/local/include   -fpic  -O3 -mtune=native -march=native -Wno-unused-variable -Wno-unused-function -fpermissive -std=c++11 -c dummy.cpp -o dummy.o
+cc1plus: error: unrecognised command line option ‘-std=c++11’
+make: *** [dummy.o] Error 1
+ERROR: compilation failed for package ‘nloptr’
+* removing ‘/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/nloptr’
+* installing *source* package ‘caTools’ ...
+** package ‘caTools’ successfully unpacked and MD5 sums checked
+** libs
+g++  -I/lustre/scratch115/teams/zeggini/R-3.4.0/include -DNDEBUG   -I/usr/local/include   -fpic  -O3 -mtune=native -march=native -Wno-unused-variable -Wno-unused-function -fpermissive -std=c++11 -c Gif2R.cpp -o Gif2R.o
+cc1plus: error: unrecognised command line option ‘-std=c++11’
+make: *** [Gif2R.o] Error 1
+ERROR: compilation failed for package ‘caTools’
+* removing ‘/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/caTools’
+* installing *source* package ‘mzR’ ...
+** libs
+rm -f cramp.o ramp_base64.o ramp.o RcppRamp.o RcppRampModule.o rnetCDF.o RcppPwiz.o RcppPwizModule.o RcppIdent.o RcppIdentModule.o ./boost/libs/system/src/error_code.o ./boost/libs/regex/src/posix_api.o ./boost/libs/regex/src/fileiter.o ./boost/libs/regex/src/regex_raw_buffer.o ./boost/libs/regex/src/cregex.o ./boost/libs/regex/src/regex_debug.o ./boost/libs/regex/src/instances.o ./boost/libs/regex/src/icu.o ./boost/libs/regex/src/usinstances.o ./boost/libs/regex/src/regex.o ./boost/libs/regex/src/wide_posix_api.o ./boost/libs/regex/src/regex_traits_defaults.o ./boost/libs/regex/src/winstances.o ./boost/libs/regex/src/wc_regex_traits.o ./boost/libs/regex/src/c_regex_traits.o ./boost/libs/regex/src/cpp_regex_traits.o ./boost/libs/regex/src/static_mutex.o ./boost/libs/regex/src/w32_regex_traits.o ./boost/libs/iostreams/src/zlib.o ./boost/libs/iostreams/src/file_descriptor.o ./boost/libs/filesystem/src/operations.o ./boost/libs/filesystem/src/path.o ./boost/libs/filesystem/src/utf8_codecvt_facet.o ./boost/libs/chrono/src/chrono.o ./boost/libs/chrono/src/process_cpu_clocks.o ./boost/libs/chrono/src/thread_clock.o ./pwiz/data/msdata/Version.o ./pwiz/data/identdata/Version.o ./pwiz/data/common/MemoryIndex.o ./pwiz/data/common/CVTranslator.o ./pwiz/data/common/cv.o ./pwiz/data/common/ParamTypes.o ./pwiz/data/common/BinaryIndexStream.o ./pwiz/data/common/diff_std.o ./pwiz/data/common/Unimod.o ./pwiz/data/msdata/SpectrumList_MGF.o ./pwiz/data/msdata/DefaultReaderList.o ./pwiz/data/msdata/ChromatogramList_mzML.o ./pwiz/data/msdata/examples.o ./pwiz/data/msdata/Serializer_mzML.o ./pwiz/data/msdata/Serializer_MSn.o ./pwiz/data/msdata/Reader.o ./pwiz/data/msdata/Serializer_MGF.o ./pwiz/data/msdata/Serializer_mzXML.o ./pwiz/data/msdata/SpectrumList_mzML.o ./pwiz/data/msdata/SpectrumList_MSn.o ./pwiz/data/msdata/BinaryDataEncoder.o ./pwiz/data/msdata/Diff.o ./pwiz/data/msdata/MSData.o ./pwiz/data/msdata/References.o ./pwiz/data/msdata/SpectrumList_mzXML.o ./pwiz/data/msdata/IO.o ./pwiz/data/msdata/SpectrumList_BTDX.o ./pwiz/data/msdata/SpectrumInfo.o ./pwiz/data/msdata/RAMPAdapter.o ./pwiz/data/msdata/LegacyAdapter.o ./pwiz/data/msdata/SpectrumIterator.o ./pwiz/data/msdata/MSDataFile.o ./pwiz/data/msdata/MSNumpress.o ./pwiz/data/msdata/SpectrumListCache.o ./pwiz/data/msdata/Index_mzML.o ./pwiz/data/msdata/SpectrumWorkerThreads.o ./pwiz/data/identdata/IdentDataFile.o ./pwiz/data/identdata/IdentData.o ./pwiz/data/identdata/DefaultReaderList.o ./pwiz/data/identdata/Reader.o ./pwiz/data/identdata/Serializer_protXML.o ./pwiz/data/identdata/Serializer_pepXML.o ./pwiz/data/identdata/Serializer_mzid.o ./pwiz/data/identdata/IO.o ./pwiz/data/identdata/References.o ./pwiz/data/identdata/MascotReader.o ./pwiz/data/proteome/Modification.o ./pwiz/data/proteome/Digestion.o ./pwiz/data/proteome/Peptide.o ./pwiz/data/proteome/AminoAcid.o ./pwiz/utility/minimxml/XMLWriter.o ./pwiz/utility/minimxml/SAXParser.o ./pwiz/utility/chemistry/Chemistry.o ./pwiz/utility/chemistry/ChemistryData.o ./pwiz/utility/chemistry/MZTolerance.o ./pwiz/utility/misc/IntegerSet.o ./pwiz/utility/misc/Base64.o ./pwiz/utility/misc/IterationListener.o ./pwiz/utility/misc/MSIHandler.o ./pwiz/utility/misc/Filesystem.o ./pwiz/utility/misc/TabReader.o ./pwiz/utility/misc/random_access_compressed_ifstream.o ./pwiz/utility/misc/SHA1.o ./pwiz/utility/misc/SHA1Calculator.o ./pwiz/utility/misc/sha1calc.o ./random_access_gzFile.o ./RcppExports.o ./boost/libs/thread/src/pthread/once.o ./boost/libs/thread/src/pthread/thread.o rampR.o R_init_mzR.o
+find . -name \*~ -exec rm {} \;   ## from cleanup
+find . -name \*.o -exec rm {} \;  ## from cleanup
+find . -name "#*#" -exec rm {} \; ## from cleanup
+g++ -std=gnu++0x -I/lustre/scratch115/teams/zeggini/R-3.4.0/include -DNDEBUG -I./boost_aux/ -I./boost/ -I. -D_LARGEFILE_SOURCE -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -DWITHOUT_MZ5   `nc-config --cflags || /bin/true`   -I"/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/Rcpp/include" -I"/lustre/scratch115/realdata/mdt3/teams/zeggini/R-3.4.0/library/zlibbioc/include" -I/usr/local/include   -fpic  -g -O2 -c cramp.cpp -o cramp.o
+/bin/sh: nc-config: command not found
+g++ -std=gnu++0x -I/lustre/scratch115/teams/zeggini/R-3.4.0/include -DNDEBUG -I./boost_aux/ -I./boost/ -I. -D_LARGEFILE_SOURCE -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -DWITHOUT_MZ5   `nc-config --cflags || /bin/true`   -I"/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/Rcpp/include" -I"/lustre/scratch115/realdata/mdt3/teams/zeggini/R-3.4.0/library/zlibbioc/include" -I/usr/local/include   -fpic  -g -O2 -c ramp_base64.cpp -o ramp_base64.o
+/bin/sh: nc-config: command not found
+g++ -std=gnu++0x -I/lustre/scratch115/teams/zeggini/R-3.4.0/include -DNDEBUG -I./boost_aux/ -I./boost/ -I. -D_LARGEFILE_SOURCE -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -DWITHOUT_MZ5   `nc-config --cflags || /bin/true`   -I"/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/Rcpp/include" -I"/lustre/scratch115/realdata/mdt3/teams/zeggini/R-3.4.0/library/zlibbioc/include" -I/usr/local/include   -fpic  -g -O2 -c ramp.cpp -o ramp.o
+/bin/sh: nc-config: command not found
+g++ -std=gnu++0x -I/lustre/scratch115/teams/zeggini/R-3.4.0/include -DNDEBUG -I./boost_aux/ -I./boost/ -I. -D_LARGEFILE_SOURCE -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -DWITHOUT_MZ5   `nc-config --cflags || /bin/true`   -I"/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/Rcpp/include" -I"/lustre/scratch115/realdata/mdt3/teams/zeggini/R-3.4.0/library/zlibbioc/include" -I/usr/local/include   -fpic  -g -O2 -c RcppRamp.cpp -o RcppRamp.o
+/bin/sh: nc-config: command not found
+g++ -std=gnu++0x -I/lustre/scratch115/teams/zeggini/R-3.4.0/include -DNDEBUG -I./boost_aux/ -I./boost/ -I. -D_LARGEFILE_SOURCE -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -DWITHOUT_MZ5   `nc-config --cflags || /bin/true`   -I"/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/Rcpp/include" -I"/lustre/scratch115/realdata/mdt3/teams/zeggini/R-3.4.0/library/zlibbioc/include" -I/usr/local/include   -fpic  -g -O2 -c RcppRampModule.cpp -o RcppRampModule.o
+/bin/sh: nc-config: command not found
+gcc -std=gnu99 -I/lustre/scratch115/teams/zeggini/R-3.4.0/include -DNDEBUG -I./boost_aux/ -I./boost/ -I. -D_LARGEFILE_SOURCE -DHAVE_PWIZ_MZML_LIB -D_NODEBUG -DWITHOUT_MZ5   `nc-config --cflags || /bin/true`   -I"/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/Rcpp/include" -I"/lustre/scratch115/realdata/mdt3/teams/zeggini/R-3.4.0/library/zlibbioc/include" -I/usr/local/include   -fpic  -I/lustre/scratch115/teams/zeggini/R-3.4.0/zlib-1.2.11  -c rnetCDF.c -o rnetCDF.o
+/bin/sh: nc-config: command not found
+In file included from rnetCDF.c:2:0:
+rnetCDF.h:1:20: fatal error: netcdf.h: No such file or directory
+compilation terminated.
+make: *** [rnetCDF.o] Error 1
+ERROR: compilation failed for package ‘mzR’
+* removing ‘/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/mzR’
+* installing *source* package ‘pcaMethods’ ...
+** libs
+g++  -I/lustre/scratch115/teams/zeggini/R-3.4.0/include -DNDEBUG  -I"/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/Rcpp/include" -I/usr/local/include   -fpic  -O3 -mtune=native -march=native -Wno-unused-variable -Wno-unused-function -fpermissive -std=c++11 -c RcppExports.cpp -o RcppExports.o
+cc1plus: error: unrecognised command line option ‘-std=c++11’
+make: *** [RcppExports.o] Error 1
+ERROR: compilation failed for package ‘pcaMethods’
+* removing ‘/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/pcaMethods’
+* installing *source* package ‘ggrepel’ ...
+** package ‘ggrepel’ successfully unpacked and MD5 sums checked
+** libs
+g++  -I/lustre/scratch115/teams/zeggini/R-3.4.0/include -DNDEBUG  -I"/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/Rcpp/include" -I/usr/local/include   -fpic  -O3 -mtune=native -march=native -Wno-unused-variable -Wno-unused-function -fpermissive -std=c++11 -c RcppExports.cpp -o RcppExports.o
+cc1plus: error: unrecognised command line option ‘-std=c++11’
+make: *** [RcppExports.o] Error 1
+ERROR: compilation failed for package ‘ggrepel’
+* removing ‘/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/ggrepel’
+ERROR: dependencies ‘minqa’, ‘nloptr’ are not available for package ‘lme4’
+* removing ‘/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/lme4’
+ERROR: dependency ‘caTools’ is not available for package ‘gplots’
+* removing ‘/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/gplots’
+ERROR: dependencies ‘mzR’, ‘pcaMethods’ are not available for package ‘MSnbase’
+* removing ‘/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/MSnbase’
+ERROR: dependencies ‘lme4’, ‘gplots’, ‘ggrepel’, ‘MSnbase’ are not available for package ‘MSstats’
+* removing ‘/nfs/users/nfs_l/ls11/R/x86_64-pc-linux-gnu-library/3.4/MSstats’
+ 
+The downloaded source packages are in
+            ‘/lustre/scratch115/realdata/mdt3/teams/zeggini/R-3.4.0/tmp/Rtmp7OjBv6/downloaded_packages’
+Old packages: 'dplyr', 'glue', 'IRanges', 'lazyeval', 'Rcpp', 'S4Vectors',
+  'scales', 'shinystan', 'tibble', 'backports', 'BH', 'checkmate', 'curl',
+  'data.table', 'DelayedArray', 'GenomeInfoDb', 'GenomicFeatures',
+  'GenomicRanges', 'gridExtra', 'HDF5Array', 'httr', 'igraph', 'irlba',
+  'limma', 'openssl', 'RSQLite', 'shiny', 'SummarizedExperiment'
+Update all/some/none? [a/s/n]: n
+Warning messages:
+1: In install.packages(pkgs = doing, lib = lib, ...) :
+  installation of package ‘minqa’ had non-zero exit status
+2: In install.packages(pkgs = doing, lib = lib, ...) :
+  installation of package ‘nloptr’ had non-zero exit status
+3: In install.packages(pkgs = doing, lib = lib, ...) :
+  installation of package ‘caTools’ had non-zero exit status
+4: In install.packages(pkgs = doing, lib = lib, ...) :
+  installation of package ‘mzR’ had non-zero exit status
+5: In install.packages(pkgs = doing, lib = lib, ...) :
+  installation of package ‘pcaMethods’ had non-zero exit status
+6: In install.packages(pkgs = doing, lib = lib, ...) :
+  installation of package ‘ggrepel’ had non-zero exit status
+7: In install.packages(pkgs = doing, lib = lib, ...) :
+  installation of package ‘lme4’ had non-zero exit status
+8: In install.packages(pkgs = doing, lib = lib, ...) :
+  installation of package ‘gplots’ had non-zero exit status
+9: In install.packages(pkgs = doing, lib = lib, ...) :
+  installation of package ‘MSnbase’ had non-zero exit status
+10: In install.packages(pkgs = doing, lib = lib, ...) :
+  installation of package ‘MSstats’ had non-zero exit status
+ 
