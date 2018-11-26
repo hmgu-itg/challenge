@@ -28,15 +28,15 @@ To submit your answer, please clone this repository and make your edits. Once yo
     b. You are at a conference abroad and you quickly realise that your connection is unstable. You get disconnected constantly, which interrupts the download. How do you ensure the download survives these disconnections?
 7. Bioinformaticians often work on a computing cluster. The cluster runs a software called a job scheduler that attributes resources to users depending on the requirements of their jobs. In this case, let's imagine the cluster is running IBM LSF. The `bjobs` command lists all jobs submitted by the user (manpage [here](https://www.ibm.com/support/knowledgecenter/en/SSETD4_9.1.2/lsf_command_ref/bjobs.1.html)). It gives this kind of output:
     ```
-    JOBID   USER    STAT  QUEUE      FROM_HOST   EXEC_HOST   JOB_NAME   SUBMIT_TIME
-    9670681 current_user     RUN   basement   head_node node1 job1 Oct 24 10:24
-    9740051 current_user     RUN   basement   head_node node1 job2 Oct 24 17:41
-    9670681 current_user     RUN   normal     head_node node2 job3 Oct 24 10:24
-    9740981 current_user     PEND  basement   head_node       job4 Oct 24 17:44
+    JOBID   USER             STAT  QUEUE      FROM_HOST EXEC_HOST JOB_NAME SUBMIT_TIME
+    9670681 current_user     RUN   basement   head_node node1     job1     Oct 24 10:24
+    9740051 current_user     RUN   basement   head_node node1     job2     Oct 24 17:41
+    9670681 current_user     RUN   normal     head_node node2     job3     Oct 24 10:24
+    9740981 current_user     PEND  basement   head_node           job4     Oct 24 17:44
 
     ```
     A user wants to know how many jobs they have pending (`PEND`) and running (`RUN`) in each queue (among `fast`, `normal`, `basement`). Write a command line to do that. How would they display this on their screen permanently, in real time?
-8. An analysis you need to run on the cluster requires a particular python library, but you do not have administrator rights. IT is on holiday. What do you do? Similar solutions exist for other languages, however things become more tricky 
+8. An analysis you need to run on the cluster requires a particular python library, but you do not have administrator rights. IT is on holiday. What do you do?  
 
 ### Bioinformatics
 1. Converting VCF to BIMBAM
