@@ -55,14 +55,20 @@ To submit your answer, please clone this repository and make your edits. Once yo
     - Do the same, but offline, using the dbSNP r.150 VCF file.
     - Answer the above 2 questions in build 37.
     - If the user sends you 7,000 such chromosome positions, how would the above methods perform? Do you know of any alternatives?
-2. for appropriately named chr files, add a column to the beginning of the file containing the chromosome code ("chr" followed by the number of the chromosome, 1 to 22)
-3.	Download the 1000 Genomes sites VCF file for chromosome 21 [here](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/supporting/GRCh38_positions/ALL.chr21_GRCh38_sites.20170504.vcf.gz). We want to compare it to [a locally stored file](data/ALL.chr21_GRCh38_sites.20170504.vcf.gz).
+6. for appropriately named chr files, add a column to the beginning of the file containing the chromosome code ("chr" followed by the number of the chromosome, 1 to 22)
+7.	Download the 1000 Genomes sites VCF file for chromosome 21 [here](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/supporting/GRCh38_positions/ALL.chr21_GRCh38_sites.20170504.vcf.gz). We want to compare it to [a locally stored file](data/ALL.chr21_GRCh38_sites.20170504.vcf.gz).
     - What is the fastest way to check the integrity of, or compare, any such downloaded file?
     - If you find that the files are indeed different, how do you find their differences? Keep in mind that this kind of file can be very large (>100Gb).
     - If you found no differences in the end, what could cause a false alarm?
-4.	What is the p-value corresponding to standard normal z-scores of 10.35, 29.7, 45.688 and 78.1479?
-5.	We want to round a column of numbers to `n` digits, with values with 5 as their rightmost significant digit rounded up. Use the language of your choice.
-6.  Is [this HRC-imputed file](https://drive.google.com/open?id=1dOYlwIlAyz9-i4gVy2sgpQv_4YX9Y5nU) missing any chromosomes? Try to find out in seconds if you can.
+8.	What is the p-value corresponding to standard normal z-scores of 10.35, 29.7, 45.688 and 78.1479?
+9.	We want to round a column of numbers to `n` digits, with values with 5 as their rightmost significant digit rounded up. Use the language of your choice.
+10.  Is [this HRC-imputed file](https://drive.google.com/open?id=1dOYlwIlAyz9-i4gVy2sgpQv_4YX9Y5nU) missing any chromosomes? Try to find out in seconds if you can.
+11.  Find out the coordinates of the _ADIPOQ_ gene. Your method should be generalisable to a list of genes and take a few seconds to run (take inspiration from question 5). Then, find out:
+    - the coordinates of the exons of its canonical transcript.
+    - all documented variants in this gene.
+    - all phenotype-associated variants. 
+    - all documented loss-of-function (LoF) variants in this gene. How did you define LoF?
+    - If asked to find all regulatory variants that potentially affect this gene, which questions would you ask and how would you proceed?
 
 ### Statistical genetics
 1. you sample 10,000 variants from a WGS file. Which MAF more likely.
