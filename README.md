@@ -62,8 +62,10 @@ To submit your answer, please clone this repository and make your edits. Once yo
     - If you found no differences in the end, what could cause a false alarm?
 4.	What is the p-value corresponding to standard normal z-scores of 10.35, 29.7, 45.688 and 78.1479?
 5.	We want to round a column of numbers to `n` digits, with values with 5 as their rightmost significant digit rounded up. Use the language of your choice.
+6.  Is [this HRC-imputed file](https://drive.google.com/open?id=1dOYlwIlAyz9-i4gVy2sgpQv_4YX9Y5nU) missing any chromosomes? Try to find out in seconds if you can.
 
 ### Statistical genetics
 1. you sample 10,000 variants from a WGS file. Which MAF more likely.
 2. Which filters for assoc
-3. a collaborator studies a population of remote villagers in Finland. They are interested in a particular variant, and compare the frequency in their village (3.5%) to the EUR population frequency in the 1000 Genomes (0.03%). They conclude that the variant has increased in frequency in the Finns.  
+3. a collaborator studies a population of remote villagers in Finland. They are interested in a particular variant, and compare the frequency in their village (3.5%) to the EUR population frequency in the 1000 Genomes (0.03%). They conclude that the variant has increased in frequency in the Finns. 
+4. Significance calculation. 
