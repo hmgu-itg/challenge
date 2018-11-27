@@ -6,6 +6,8 @@ Please find below a few questions that mimic some common problems we encounter a
 
 For programmatic questions, you can use the language of your choice. If you use the shell, you can assume that common non-core packages will be installed (e.g. `awk`, `sed`, `perl`, `python`, `sponge`, `wget` or `jq`). You can use the shell of your choice, if not otherwise specified we will assume `bash`. Assume that all common bioinformatics tools `bcftools`, `bedtools`, `vcftools`, `plink` and others are all installed.
 
+Whenever the command line or programming is used, include your code along with your answer.
+
 To submit your answer, please clone this repository and make your edits. Once you're done, send us a link to your repository, or compress it and send us a link to the archive.
 
 ## Questions
@@ -42,7 +44,7 @@ To submit your answer, please clone this repository and make your edits. Once yo
 
 ### Bioinformatics
 1. The [VCF format](http://www.internationalgenome.org/wiki/Analysis/vcf4.0/) is a popular format to describe genetic variations in a study group. It is often used in sequencing projects. Due to size concerns, it is often compressed using `gzip` and indexed using `tabix`. A binary version, BCF, also exists.
-    - Write a command or script to remove duplicate positions in a VCF, independently of their alleles. The positions can be duplicated an arbitrary number of times. Write code to keep the first, last and a random record among each set of duplicated records.
+    - Write a command or script to remove duplicate positions in a VCF such as [this one](data/duplicates.vcf.gz), independently of their alleles. The positions can be duplicated an arbitrary number of times. Write code to keep the first, last and a random record among each set of duplicated records.
     - Same question, but make duplicate selection allele specific and remove all incriminated records instead of keeping one.
 2. How do you produce a VCF file without any samples using `bcftools`?
 3. You are the curator of a dataset with a very strict privacy policy in place. In particular, it should be impossible to tell, given access to a person's genetic data, whether they were part of your study by looking at a dataset you provided. A collaborator is asking you for some data to run tests on their code. What information can you safely contribute from your study?
