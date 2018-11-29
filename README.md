@@ -67,7 +67,7 @@ To submit your results, please clone this repository and make your edits. Once y
 10.  Is [this HRC-imputed file](https://drive.google.com/open?id=1dOYlwIlAyz9-i4gVy2sgpQv_4YX9Y5nU) missing any chromosomes? Try to find out in seconds if you can.
 11.  Find out the coordinates of the _ADIPOQ_ gene. Your method should be generalisable to a list of genes and take a few seconds to run (take inspiration from question 5). Then, find out:
     - the coordinates of the exons of its canonical transcript.
-     all documented variants in this gene.
+    - all documented variants in this gene.
     - all phenotype-associated variants. 
     - all documented loss-of-function (LoF) variants in this gene. How did you define LoF?
     - If asked to find all regulatory variants that potentially affect this gene, which questions would you ask and how would you proceed?
