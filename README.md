@@ -24,7 +24,7 @@ To submit your results, please clone this repository and make your edits. Once y
     ./test.EasyQC-START.R: line 6: 'library(EasyQC)'
     ```
 
-     You need to run this script now, but it's Friday, your collaborator is in Japan and they have already left the office due to the time difference. What is causing the error? (Hint: Nothing is wrong with the `.ecf` EasyQC script.)
+     You need to run this script now, but your collaborator is unavailable for a few days. What is causing the error? (Hint: Nothing is wrong with the `.ecf` EasyQC script.)
 6. Programmatic download
     - You have to download all autosomal files from this location: [http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/supporting/GRCh38_positions/](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/supporting/GRCh38_positions/) onto **your server**. You connect to the server via SSH. Using only the command line, how do you perform this download?
     - You are at a conference abroad and you quickly realise that your connection is unstable. You get disconnected constantly, which interrupts the download. How do you ensure the download survives these disconnections?
@@ -81,9 +81,9 @@ To submit your results, please clone this repository and make your edits. Once y
     - You are dealing with whole-genome sequencing data in 2,326 Bulgarian samples. How would you perform such an ethnicity check, and which projection dataset would you use? 
 4. You perform a single-point association with blood lipids and find a variant with MAF=0.7% associated at p=1e-14. Do you expect the effect size to be large or small? What would be your next steps investigating this signal?
 5. You are running an inverse-variance based single-point meta-analysis of the above dataset and a UK study of 12,400 individuals. The variant above is found in the UK dataset, but its association is weak (1e-3). However, another variant located 1kb downstream is strongly associated with the same trait (p=1e-15) but weakly associated in your study (p=5e-4). Which of these 2 variants do you expect will have the strongest meta-analysis p-value? What do you think is happening in this region, how can you test it, and which model could you apply if it is the case?
-6. A collaborator studies a population of remote villages in Finland. They are interested in a particular variant, and compare the frequency in their villages (3.5%) to the EUR population frequency in the 1000 Genomes (0.03%). They conclude that the variant has increased in frequency in the Finns. Do you agree?
-7.  The same collaborator sends you association summary statistics for random glucose.
+6. An analyst studies a population of remote villages in Eastern Europe. They are interested in a particular variant, and compare the frequency in their villages (3.5%) to the EUR population frequency in the 1000 Genomes (0.03%). They conclude that the variant has increased in frequency in the Finns. Do you agree?
+7.  The same analyst sends you association summary statistics for random glucose.
     - Which checks would you perform on such a dataset?
-    - You wish to include this dataset in a meta-analysis. Which additional information should you ask for in your next email to your collaborator?
-    - In this dataset, you observe  &#955;=1.25. The collaborator has adjusted for age, age-squared, sex, and fasting status. What would you suggest they do?
-8. You are a co-author on a manuscript. You receive a draft, in which the main author has used the traditional &#945;=5e-8 as the significance threshold. The paper describes an analysis of 10 related blood phenotypes (platelet count, platelet volume, immature platelet fraction ...) using the fixed markers of the Infinium ImmunoArray on 897 individuals. What do you think about the chosen threshold, and what would you suggest to the first author? What would you suggest to the last author regarding the design of their study? 
+    - You wish to include this dataset in a meta-analysis. Which additional information should you ask for in your next email to your colleague?
+    - In this dataset, you observe  &#955;=1.25. The analyst has adjusted for age, age-squared, sex, and fasting status. What would you suggest they do?
+8. You are a co-author on a manuscript. You receive a draft, in which the main author has used the traditional &#945;=5e-8 as the significance threshold. The paper describes an analysis of 10 related blood phenotypes (platelet count, platelet volume, immature platelet fraction ...) using the fixed markers of the Infinium ImmunoArray on 897 individuals. What do you think about the chosen threshold, and what would you suggest to the first author? What would be your comments on the design of the study? 
