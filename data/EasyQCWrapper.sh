@@ -28,9 +28,9 @@ q()
 ######### Write EasyQC.ecf #######################
 
 echo "
-#########################################################
-####    Genetics of Osteoarthritis EasyQC script    #####
-#########################################################
+##############################
+####    EasyQC script    #####
+##############################
 DEFINE  --pathOut $2
 	--strSeparator TAB 
 	--acolIn CPTID;CHR;POS;EA;NEA;EAF;P;BETA;SE;NCASES;NCONTROLS;N;INFO
