@@ -51,7 +51,7 @@ To submit your results, please clone this repository and make your edits. Once y
 4. How do you convert a gzipped VCF to the `bimbam` format? (you may choose to script a solution yourself or not)
 5. A user sends you a small number of chromosome and positions in build 38 that they want to know the rsID of. 
     - What is missing from their request? What kind of unexpected output can they expect?
-    - Given [this file](data/rand.chrpos), honour their request using the Ensembl REST API.
+    - Given [this file](data/rand.chrpos.txt), honour their request using the Ensembl REST API.
     - Do the same, but offline, using the dbSNP r.150 VCF file.
     - What would change if these positions were in build 37?
     - If the user sends you 7,000 such chromosome positions, how would the above methods perform? Do you know of any alternatives?
@@ -80,8 +80,8 @@ To submit your results, please clone this repository and make your edits. Once y
 3. A common practice when performing genetic studies is to perform an ethnicity check. Can you explain how this is done?
     - You are dealing with whole-genome sequencing data in 2,326 Bulgarian samples. How would you perform such an ethnicity check, and which projection dataset would you use? 
 4. You perform a single-point association with blood lipids and find a variant with MAF=0.7% associated at p=1e-14. Do you expect the effect size to be large or small? What would be your next steps investigating this signal?
-5. You are running an inverse-variance based single-point meta-analysis of the above dataset and a UK study of 12,400 individuals. The variant above is found in the UK dataset, but its association is weak (1e-3). However, another variant located 1kb downstream is strongly associated with the same trait (p=1e-15) but weakly associated in your study (p=5e-4). Which of these 2 variants do you expect will have the strongest meta-analysis p-value? What do you think is happening in this region, how can you test it, and which model could you apply if it is the case?
-6. An analyst studies a population of remote villages in Eastern Europe. They are interested in a particular variant, and compare the frequency in their villages (3.5%) to the EUR population frequency in the 1000 Genomes (0.03%). They conclude that the variant has increased in frequency in the Finns. Do you agree?
+5. You are running an inverse-variance based single-point meta-analysis of the above dataset together with a UK study of 12,400 individuals. The variant above is found in the UK dataset, but its association is weak (1e-3). However, another variant located 1kb downstream is strongly associated with the same trait (p=1e-15) but weakly associated in your study (p=5e-4). Which of these 2 variants do you expect will have the strongest meta-analysis p-value? What do you think is happening in this region, how can you test it, and which model could you apply if it is the case?
+6. An analyst studies a population of remote villages in Eastern Europe. They are interested in a particular variant, and compare the frequency in their villages (3.5%) to the EUR population frequency in the 1000 Genomes (0.03%). They conclude that the variant has increased in frequency in their villages. Do you agree, and if not, what would your advice be?
 7.  The same analyst sends you association summary statistics for random glucose.
     - Which checks would you perform on such a dataset?
     - You wish to include this dataset in a meta-analysis. Which additional information should you ask for in your next email to your colleague?
