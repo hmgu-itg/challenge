@@ -4,9 +4,9 @@
 
 Please find below a few questions that mimic some common problems we encounter at ITG. They are grouped by broad theme. You will notice there are many questions, the goal is not to answer them all but to pick a few questions to focus on (10 is a good number, but pick as many as you want). They can be all from one theme, or span all disciplines. We encourage you to choose your questions wisely: if you are a Python expert, avoid R questions, for example. Or if you are strong in genetics but not in systems maintenance, the last category will be your best bet.
 
-For programmatic questions, you can use the language of your choice. If you use the shell, you can assume that common non-core packages will be installed (e.g. `awk`, `sed`, `perl`, `python`, `sponge`, `wget` or `jq`). You can use the shell of your choice, if not otherwise specified we will assume `bash`. Assume that all common bioinformatics tools `bcftools`, `bedtools`, `vcftools`, `plink` and others are all installed.
+For programmatic questions, you can use the language and libraries of your choice. If you use a shell script, you can assume that common non-core packages will be installed (e.g. `awk`, `sed`, `perl`, `python`, `sponge`, `wget` or `jq`). You can use the shell of your choice, if not otherwise specified we will assume `bash`. Assume that all common bioinformatics tools `bcftools`, `bedtools`, `vcftools`, `plink` and others are all installed.
 
-Whenever the command line or programming is used, include your code along with your answer. Not all questions are programmatic, and some are open-ended. Feel free to include details and to discuss potential issues if you don't think there is a clear-cut answer.
+We are primarily interested in how you would solve these problems if you encountered them in real life. Whenever the command line or programming is used, please include your code along with your answer. Not all questions are programmatic, and some are open-ended. Feel free to include details and to discuss potential issues if you don't think there is a clear-cut answer.
 
 To submit your results, please clone this repository and make your edits. Once you're done, send us a link to your repository, or compress it and send us a link to the archive.
 
@@ -47,8 +47,8 @@ To submit your results, please clone this repository and make your edits. Once y
     - Write a command or script to remove duplicate positions in a VCF such as [this one](data/duplicates.vcf.gz), independently of their alleles. The positions can be duplicated an arbitrary number of times. Write code to keep the first, last and a random record among each set of duplicated records.
     - Same question, but make duplicate detection allele-specific. When it finds such an exact duplicate, your code should remove all of the corresponding records.
 2. How do you produce a VCF file without any samples using `bcftools`?
-3. You are the curator of a dataset with a very strict privacy policy in place. In particular, it should be impossible to tell, given access to a person's genetic data, whether they were part of your study by looking at a dataset you provided. A collaborator is asking you for some data to run tests on their code. What information can you safely contribute from your study?
-4. How do you convert a gzipped VCF to the `bimbam` format? (you may choose to script a solution yourself or not)
+3. You are the curator of a genotype dataset with a very strict privacy policy in place. In particular, it should be impossible to tell, given access to a person's genetic data, whether they were part of your study by looking at a dataset you provided. A collaborator is asking you for some data to run tests on their code. What information can you safely contribute from your study?
+4. How do you convert a gzipped VCF to the `bimbam` format? (you may choose to script a solution yourself, or not)
 5. A user sends you a small number of chromosome and positions in build 38 that they want to know the rsID of. 
     - What is missing from their request? What kind of unexpected output can they expect?
     - Given [this file](data/rand.chrpos.txt), honour their request using the Ensembl REST API.
