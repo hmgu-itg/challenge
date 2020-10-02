@@ -63,7 +63,7 @@ To submit your results, please clone this repository and make your edits. Once y
     - If you find that the files are indeed different, how do you find their differences? Keep in mind that this kind of file can be very large (>100Gb), your solution should be as fast and memory-efficient as possible.
     - If you found no differences in the end, what could cause a false alarm?
 8.	What is the p-value corresponding to standard normal z-scores of 10.35, 29.7, 45.688 and 78.1479?
-9.	We want to round a column of numbers to `n` digits, with values with 5 as their rightmost significant digit rounded up. Use the language of your choice.
+9.	We want to round a column of numbers to `n` decimal places, with values with 5 as their rightmost significant digit rounded up. Use the language of your choice.
 10.  Is [this HRC-imputed file](https://drive.google.com/open?id=1dOYlwIlAyz9-i4gVy2sgpQv_4YX9Y5nU) missing any chromosomes? Try to find out in seconds if you can.
 11.  Find out the coordinates of the _ADIPOQ_ gene. Your method should be generalisable to a list of genes and take a few seconds to run (take inspiration from question 5). Then, please report the following:
     - the coordinates of the exons of its canonical transcript.
